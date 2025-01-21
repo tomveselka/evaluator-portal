@@ -1,0 +1,6 @@
+F:\repos\evaluator-portal\PortalOfEvaluatorsDatabase\bin\Debug\PortalOfEvaluatorsDatabase.dacpac
+F:\repos\evaluator-portal\PortalOfEvaluatorsDatabase\bin\Debug\PortalOfEvaluatorsDatabase.dll
+F:\repos\evaluator-portal\PortalOfEvaluatorsDatabase\bin\Debug\PortalOfEvaluatorsDatabase.pdb
+F:\repos\evaluator-portal\PortalOfEvaluatorsDatabase\obj\Debug\PortalOfEvaluatorsDatabase.sqlproj.AssemblyReference.cache
+F:\repos\evaluator-portal\PortalOfEvaluatorsDatabase\obj\Debug\PortalOfEvaluatorsDatabase.dll
+F:\repos\evaluator-portal\PortalOfEvaluatorsDatabase\obj\Debug\PortalOfEvaluatorsDatabase.pdb

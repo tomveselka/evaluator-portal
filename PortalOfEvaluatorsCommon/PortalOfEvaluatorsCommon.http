@@ -1,0 +1,6 @@
+@PortalOfEvaluatorsCommon_HostAddress = http://localhost:5038
+
+GET {{PortalOfEvaluatorsCommon_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
