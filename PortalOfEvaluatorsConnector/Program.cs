@@ -1,3 +1,6 @@
+using PortalOfEvaluatorsCommon.Repo;
+using PortalOfEvaluatorsConnector.Services;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -6,6 +9,11 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+builder.Services.AddTransient<ICollateralHandler, CollateralHandler>();
+builder.Services.AddTransient<IAddCollateralService, AddCollateralService>();
+builder.Services.AddTransient<IGenerateGuidService, GenerateGuidService>();
+builder.Services.AddScoped<IDatabaseService, DatabaseService>();
 
 var app = builder.Build();
 

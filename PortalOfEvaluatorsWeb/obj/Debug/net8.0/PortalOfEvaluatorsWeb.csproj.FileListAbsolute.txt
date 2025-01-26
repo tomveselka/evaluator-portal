@@ -29,3 +29,6 @@ F:\repos\evaluator-portal\PortalOfEvaluatorsWeb\obj\Debug\net8.0\refint\PortalOf
 F:\repos\evaluator-portal\PortalOfEvaluatorsWeb\obj\Debug\net8.0\PortalOfEvaluatorsWeb.pdb
 F:\repos\evaluator-portal\PortalOfEvaluatorsWeb\obj\Debug\net8.0\PortalOfEvaluatorsWeb.genruntimeconfig.cache
 F:\repos\evaluator-portal\PortalOfEvaluatorsWeb\obj\Debug\net8.0\ref\PortalOfEvaluatorsWeb.dll
+F:\repos\evaluator-portal\PortalOfEvaluatorsWeb\bin\Debug\net8.0\AutoMapper.dll
+F:\repos\evaluator-portal\PortalOfEvaluatorsWeb\obj\Debug\net8.0\PortalOfEvaluatorsWeb.csproj.AssemblyReference.cache
+F:\repos\evaluator-portal\PortalOfEvaluatorsWeb\obj\Debug\net8.0\PortalOfEvaluatorsWeb.csproj.CopyComplete

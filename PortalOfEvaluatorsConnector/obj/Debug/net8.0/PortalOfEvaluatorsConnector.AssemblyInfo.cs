@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PortalOfEvaluatorsConnector")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2256736692513552c12085a8f23dd7f6392df392")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+550d47bc74957cb7f2c9cfdc08e7489ca1f90bd4")]
 [assembly: System.Reflection.AssemblyProductAttribute("PortalOfEvaluatorsConnector")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PortalOfEvaluatorsConnector")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

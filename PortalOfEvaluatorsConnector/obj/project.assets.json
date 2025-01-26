@@ -3000,7 +3000,8 @@
   "projectFileDependencyGroups": {
     "net8.0": [
       "PortalOfEvaluatorsCommon >= 1.0.0",
-      "Swashbuckle.AspNetCore >= 6.4.0"
+      "Swashbuckle.AspNetCore >= 6.4.0",
+      "automapper >= 13.0.1"
     ]
   },
   "packageFolders": {
@@ -3049,6 +3050,10 @@
           "Swashbuckle.AspNetCore": {
             "target": "Package",
             "version": "[6.4.0, )"
+          },
+          "automapper": {
+            "target": "Package",
+            "version": "[13.0.1, )"
           }
         },
         "imports": [

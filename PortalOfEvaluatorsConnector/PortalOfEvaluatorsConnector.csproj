@@ -15,4 +15,8 @@
     <ProjectReference Include="..\PortalOfEvaluatorsCommon\PortalOfEvaluatorsCommon.csproj" />
   </ItemGroup>
 
+	<ItemGroup>
+		<PackageReference Include="automapper" Version="13.0.1" />
+	</ItemGroup>
+
 </Project>

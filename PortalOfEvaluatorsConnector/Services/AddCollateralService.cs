@@ -12,4 +12,5 @@ public class AddCollateralService : IAddCollateralService
         _databaseService = databaseService;
         _logger = logger;
     }
+
 }

@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 using PortalOfEvaluatorsConnector.Models;
 using PortalOfEvaluatorsConnector.Services;
@@ -8,19 +9,49 @@ namespace PortalOfEvaluatorsConnector.Controllers
     [Route("[controller]")]
     public class CollateralController : ControllerBase
     {
-        private readonly ILogger<CollateralController> _logger;
         private readonly ICollateralHandler _collateralHandler;
 
-        public CollateralController(ILogger<CollateralController> logger, ICollateralHandler collateralHandler)
+        public CollateralController(ICollateralHandler collateralHandler)
         {
-            _logger = logger;
             _collateralHandler = collateralHandler;
         }
 
-        [HttpPost(Name = "AddProperty")]
-        public AddPropertyResponse AddProperty(AddPropertyRequest request)
+        [HttpPost("AddCollateral")]
+        public async Task<IActionResult> AddCollateral(AddCollateralRequest request)
         {
-            return new AddPropertyResponse { };
+            var response = await _collateralHandler.AddCollateral(request);
+            return response;
+        }
+
+        /*
+        [ProducesResponseType(typeof(GetCollateralStatusResponse), StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        [HttpGet(Name = "GetCollateralStatus/{applicationNumber}")]
+        public async Task<IActionResult> GetCollateralStatus(string applicationNumber)
+        {
+            var response = await _collateralHandler.GetCollateralStatus(applicationNumber);
+            if(response.ExceptionName is null)
+            {
+                return Ok(response);
+            }
+            if (response.ExceptionName.Equals("InvalidOperationException")){
+                return StatusCode(404, new { Message = response.Message, Error = response.ExceptionName });
+            }
+            else
+            {
+                return StatusCode(500, new { Message = response.Message, Error = response.ExceptionName });
+            }
+        }*/
+
+        [ProducesResponseType(typeof(GetCollateralStatusResponse), StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        [HttpGet("GetCollateralStatus/{applicationNumber}")]
+        public async Task<IActionResult> GetCollateralStatus(string applicationNumber)
+        {
+            var response = await _collateralHandler.GetCollateralStatus(applicationNumber);
+            return response;
         }
     }
 }
